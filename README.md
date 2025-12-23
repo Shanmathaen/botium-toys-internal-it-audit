@@ -33,8 +33,8 @@ This audit is fictional and conducted for educational purposes only.
 
 ## 📂 Project Files
 
-- [Scope & Risk Assessment](scope-and-risk-assessment.md)
-- [Controls & Compliance Checklist](controls-and-compliance-checklist.md)
-- [Findings & Risks](findings-and-risks.md)
-- [Recommendations](recommendations.md)
+- [Scope & Risk Assessment](reports/scope-and-risk-assessment.md)
+- [Controls & Compliance Checklist](reports/controls-and-compliance-checklist.md)
+- [Findings & Risks](reports/findings-and-risks.md)
+- [Recommendations](reports/recommendations.md)
 
