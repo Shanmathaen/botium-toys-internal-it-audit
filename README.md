@@ -32,3 +32,11 @@ This audit is fictional and conducted for educational purposes only.
 - `observations.md` – Key findings from the audit
 - `recommendations.md` – Actionable security improvements
 
+- 
+## 📂 Project Files
+
+- [Scope & Risk Assessment](scope-and-risk-assessment.md)
+- [Controls & Compliance Checklist](controls-and-compliance-checklist.md)
+- [Observations](observations.md)
+- [Recommendations](recommendations.md)
+
