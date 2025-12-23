@@ -109,7 +109,7 @@ Botium Toys currently lacks adequate asset management and does not have sufficie
 | Intrusion Detection System (IDS) | No | No IDS is in place |
 | Backups | No | No backups of critical data |
 | Antivirus Software | Yes | Installed and monitored regularly |
-| Legacy System Monitoring | Partial | No formal schedule or documented procedures |
+| Legacy System Monitoring | No | No formal schedule or documented procedures |
 | Encryption | No | Sensitive data is not encrypted |
 | Password Management System | No | No centralized password management solution |
 | Physical Locks | Yes | Offices, storefront, and warehouse secured |
