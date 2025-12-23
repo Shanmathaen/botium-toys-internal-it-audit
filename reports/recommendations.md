@@ -1,7 +1,17 @@
 ## Recommendations
-- Implement role-based access control (RBAC) and least privilege.
-- Encrypt sensitive and cardholder data at rest and in transit.
-- Establish automated backups and a disaster recovery plan.
-- Deploy an intrusion detection system (IDS).
-- Implement a centralized password management solution.
-- Formalize asset inventory and data classification processes.
+
+### Immediate Actions
+- Enforce least privilege and role-based access control
+- Encrypt sensitive data at rest and in transit
+- Implement regular backups and disaster recovery planning
+
+### Short-Term Improvements
+- Deploy an intrusion detection system (IDS)
+- Strengthen password complexity requirements
+- Implement centralized password management
+
+### Long-Term Improvements
+- Regular security audits
+- Data classification and inventory
+- Continuous monitoring and patch management
+
