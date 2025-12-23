@@ -37,6 +37,6 @@ This audit is fictional and conducted for educational purposes only.
 
 - [Scope & Risk Assessment](scope-and-risk-assessment.md)
 - [Controls & Compliance Checklist](controls-and-compliance-checklist.md)
-- [Observations](observations.md)
+- [Findings & Risks](observations.md)
 - [Recommendations](recommendations.md)
 
