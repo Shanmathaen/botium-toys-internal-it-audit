@@ -1,4 +1,3 @@
-# botium-toys-internal-it-audit
 # Botium Toys – Security Audit Case Study
 
 This project is a simulated internal security audit conducted for
