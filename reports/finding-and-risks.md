@@ -1,16 +1,19 @@
-## Recommendations
+## High-Risk Findings
 
-### Immediate Actions
-- Enforce least privilege and role-based access control
-- Encrypt sensitive data at rest and in transit
-- Implement regular backups and disaster recovery planning
+1. All employees have access to sensitive customer data, including
+cardholder data and PII/SPII.
+Risk: High
 
-### Short-Term Improvements
-- Deploy an intrusion detection system (IDS)
-- Strengthen password complexity requirements
-- Implement centralized password management
+2. Customer credit card data is not encrypted at rest or in transit.
+Risk: High
 
-### Long-Term Improvements
-- Regular security audits
-- Data classification and inventory
-- Continuous monitoring and patch management
+3. No backups or disaster recovery plan exists.
+Risk: High
+
+## Medium-Risk Findings
+
+4. Weak password policy and no centralized password management system.
+Risk: Medium
+
+5. No intrusion detection system (IDS) in place.
+Risk: Medium
