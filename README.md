@@ -120,41 +120,68 @@ Botium Toys currently lacks adequate asset management and does not have sufficie
 
 ## 7. Compliance Assessment
 
-### 7.1 PCI DSS (Payment Card Industry Data Security Standard)
-
-**Status:** ❌ Non-Compliant
-
-**Findings:**
-- Unauthorized access to cardholder data  
-- No encryption of credit card information  
-- Weak password and access control policies  
+## ✅ Compliance Checklist
 
 ---
 
-### 7.2 GDPR (General Data Protection Regulation)
+## Payment Card Industry Data Security Standard (PCI DSS)
 
-**Status:** ⚠️ Partially Compliant
+| Best Practice | Yes | No | Explanation |
+|---------------|-----|----|-------------|
+| Only authorized users have access to customers’ credit card information |  | ❌ | Currently, all employees have access to internal data, including customers’ credit card information |
+| Credit card information is stored, accepted, processed, and transmitted internally in a secure environment |  | ❌ | Credit card data is not encrypted and access is not restricted |
+| Implement data encryption procedures to better secure credit card transaction touchpoints and data |  | ❌ | Encryption is not currently used for cardholder data |
+| Adopt secure password management policies |  | ❌ | Password policies are weak and no password management system is in place |
 
-**Strengths:**
-- Breach notification plan within 72 hours exists  
-- Privacy policies are documented and enforced  
+**PCI DSS Compliance Status:** ❌ Non-Compliant
 
-**Gaps:**
-- No encryption for sensitive customer data  
-- Assets are inventoried but not classified  
+---
+
+## General Data Protection Regulation (GDPR)
+
+| Best Practice | Yes | No | Explanation |
+|---------------|-----|----|-------------|
+| E.U. customers’ data is kept private and secured |  | ❌ | Encryption is not used to protect customer data |
+| There is a plan in place to notify E.U. customers within 72 hours of a data breach | ✅ |  | A breach notification plan exists and meets GDPR requirements |
+| Ensure data is properly classified and inventoried |  | ❌ | Assets are inventoried but not classified |
+| Enforce privacy policies, procedures, and processes | ✅ |  | Privacy policies and procedures are documented and enforced |
+
+**GDPR Compliance Status:** ⚠️ Partially Compliant
 
 ---
 
-### 7.3 SOC Type 1 & Type 2
+## System and Organization Controls (SOC Type 1 & Type 2)
 
-**Status:** ❌ Non-Compliant
+| Best Practice | Yes | No | Explanation |
+|---------------|-----|----|-------------|
+| User access policies are established |  | ❌ | Least Privilege and separation of duties are not implemented |
+| Sensitive data (PII/SPII) is confidential and private |  | ❌ | Sensitive data is not encrypted |
+| Data integrity ensures data is consistent, complete, accurate, and validated | ✅ |  | Integrity controls are in place |
+| Data is available only to authorized individuals |  | ❌ | Data is accessible to all employees, authorization needs restriction |
 
-**Findings:**
-- Least Privilege and separation of duties not implemented  
-- Sensitive data (PII/SPII) is not encrypted  
-- Data availability exists, but access is overly permissive  
+**SOC Compliance Status:** ❌ Non-Compliant
 
 ---
+
+## 📌 Overall Compliance Summary
+
+- **PCI DSS:** ❌ Non-Compliant  
+- **GDPR:** ⚠️ Partially Compliant  
+- **SOC Type 1 & 2:** ❌ Non-Compliant  
+
+---
+
+## 🔧 Compliance Improvement Recommendations
+
+To address compliance gaps, Botium Toys should:
+
+- Implement **Least Privilege** and **role-based access control**
+- Encrypt sensitive data (PII, SPII, and cardholder data)
+- Deploy a **password management system**
+- Strengthen password complexity requirements
+- Properly classify and inventory all assets
+- Restrict access to sensitive data based on job responsibilities
+
 
 ## 8. Recommendations
 
