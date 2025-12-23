@@ -24,3 +24,11 @@ improvements based on industry best practices.
 
 ## Disclaimer
 This audit is fictional and conducted for educational purposes only.
+
+## 📁 Repository Structure
+
+- `scope-and-risk-assessment.md` – Audit scope, goals, and risk analysis
+- `controls-and-compliance-checklist.md` – Security controls & compliance review
+- `observations.md` – Key findings from the audit
+- `recommendations.md` – Actionable security improvements
+
