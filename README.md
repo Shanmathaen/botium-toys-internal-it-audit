@@ -1,209 +1,192 @@
-# Botium Toys – Security Audit Case Study
+# 🧸 Botium Toys – Internal IT Audit Report
+**Framework Used:** NIST Cybersecurity Framework (NIST CSF)  
+**Audit Type:** Internal IT Security Audit  
+**Company Type:** Small U.S.-based retail & eCommerce business (Fictional Case Study)
 
-🧸 Botium Toys – Internal IT Audit Report
+---
 
-Framework Used: NIST Cybersecurity Framework (NIST CSF)
-Audit Type: Internal IT Security Audit
-Company Type: Small U.S.-based retail & eCommerce business (fictional)
-
-1. Executive Summary
+## 1. Executive Summary
 
 Botium Toys is a growing retail company with both physical and online operations, serving customers in the United States and the European Union. Due to rapid business expansion and increased online transactions, the IT department conducted an internal IT audit to evaluate the organization’s current security posture.
 
 This audit assesses existing assets, identifies risks, reviews implemented controls, and evaluates compliance with relevant regulations and industry standards. The objective is to identify security gaps, assess risk levels, and recommend improvements to protect sensitive data, ensure regulatory compliance, and strengthen overall cybersecurity maturity.
 
-2. Audit Scope and Goals
-2.1 Audit Scope
+---
+
+## 2. Audit Scope and Goals
+
+### 2.1 Audit Scope
 
 The internal IT audit assessed the following areas:
 
-User access permissions
+- User access permissions  
+- Existing security controls, procedures, and system protocols  
+- Technology and systems currently in use  
+- Data handling, retention, and storage practices  
 
-Existing security controls and procedures
+---
 
-IT systems, software, and infrastructure currently in use
+### 2.2 Audit Goals
 
-Data handling and storage practices
+The goals of this audit are to:
 
-Compliance with relevant security and privacy regulations
+- Align business practices with the **NIST Cybersecurity Framework (CSF)**  
+- Identify risks, threats, and vulnerabilities to critical assets  
+- Establish policies and procedures to ensure regulatory compliance  
+- Fortify system and security controls  
 
-2.2 Audit Goals
+---
 
-The primary goals of this audit are to:
+## 3. Asset Inventory
 
-Align security practices with the NIST Cybersecurity Framework (CSF)
+Assets managed by the IT department include:
 
-Identify risks, threats, and vulnerabilities to critical assets
+- On-premises equipment for office and business operations  
+- Employee devices (desktops, laptops, smartphones, remote workstations)  
+- Peripheral equipment (keyboards, mice, headsets, docking stations, cables)  
+- Surveillance systems (CCTV)  
+- Internal network and internet access  
+- Business systems (accounting, databases, ecommerce, inventory management)  
+- Data retention and storage systems  
+- Legacy systems requiring manual monitoring and maintenance  
+- Physical storefront, warehouse, and inventory  
 
-Evaluate existing administrative, technical, and physical controls
+---
 
-Identify gaps in regulatory compliance (PCI DSS, GDPR, SOC)
+## 4. Risk Assessment
 
-Provide remediation recommendations to improve the organization’s security posture
+### 4.1 Risk Overview
 
-3. Asset Inventory
+Botium Toys currently lacks adequate asset management and does not have sufficient security controls in place. As a result, the organization is exposed to increased risk related to unauthorized access, data breaches, regulatory fines, and operational disruption.
 
-The IT department manages the following assets:
+---
 
-On-premises office and business equipment
+### 4.2 Key Risk Findings
 
-Employee devices (desktops, laptops, smartphones, remote workstations)
+- All employees have unrestricted access to internal data, including customer PII and credit card information  
+- Credit card data is not encrypted when accepted, processed, transmitted, or stored  
+- No disaster recovery or backup solutions exist  
+- No intrusion detection system (IDS) is deployed  
+- Weak password policies and lack of centralized password management  
+- Legacy systems lack a formal maintenance and monitoring schedule  
 
-Peripheral equipment (keyboards, headsets, docking stations, cables)
+---
 
-Surveillance systems (CCTV)
+### 4.3 Risk Score
 
-Internal network and internet access
+- **Risk Score:** 8 / 10 (High)  
+- **Impact Level:** Medium to High  
+- **Likelihood:** High  
 
-Business systems (accounting, databases, inventory, ecommerce platforms)
+---
 
-Data retention and storage systems
+## 5. Control Categories and Types
 
-Legacy systems requiring manual monitoring and maintenance
+### Control Categories Reviewed
 
-Physical storefront, warehouse, and inventory
+- Administrative / Managerial Controls  
+- Technical Controls  
+- Physical / Operational Controls  
 
-4. Risk Assessment
-4.1 Risk Overview
+### Control Types Considered
 
-Botium Toys currently has inadequate asset management and insufficient security controls. As a result, the organization faces elevated risk related to unauthorized access, data breaches, regulatory fines, and business disruption.
+- Preventative  
+- Detective  
+- Corrective  
+- Deterrent  
 
-4.2 Key Identified Risks
+---
 
-All employees have access to sensitive internal data, including customer PII and credit card information
+## 6. Controls Assessment Checklist
 
-Lack of encryption for stored and transmitted payment card data
+| Control | Implemented | Explanation |
+|------|------------|-------------|
+| Least Privilege | No | All employees currently have access to sensitive data |
+| Disaster Recovery Plan | No | No business continuity or recovery plans exist |
+| Password Policies | No | Password requirements are minimal |
+| Separation of Duties | No | CEO manages daily operations and payroll |
+| Firewall | Yes | Firewall rules are properly configured |
+| Intrusion Detection System (IDS) | No | No IDS is in place |
+| Backups | No | No backups of critical data |
+| Antivirus Software | Yes | Installed and monitored regularly |
+| Legacy System Monitoring | Partial | No formal schedule or documented procedures |
+| Encryption | No | Sensitive data is not encrypted |
+| Password Management System | No | No centralized password management solution |
+| Physical Locks | Yes | Offices, storefront, and warehouse secured |
+| CCTV Surveillance | Yes | Cameras installed and operational |
+| Fire Detection & Prevention | Yes | Fire alarm and sprinkler systems in place |
 
-No disaster recovery or backup strategy
+---
 
-Absence of intrusion detection systems
+## 7. Compliance Assessment
 
-Weak password policies and no centralized password management system
+### 7.1 PCI DSS (Payment Card Industry Data Security Standard)
 
-Unclear procedures for managing and maintaining legacy systems
+**Status:** ❌ Non-Compliant
 
-4.3 Risk Score
+**Findings:**
+- Unauthorized access to cardholder data  
+- No encryption of credit card information  
+- Weak password and access control policies  
 
-Risk Score: 8 / 10 (High)
+---
 
-Impact Level: Medium to High
+### 7.2 GDPR (General Data Protection Regulation)
 
-Likelihood: High due to lack of preventative and detective controls
+**Status:** ⚠️ Partially Compliant
 
-5. Control Categories and Control Types
-5.1 Control Categories Reviewed
+**Strengths:**
+- Breach notification plan within 72 hours exists  
+- Privacy policies are documented and enforced  
 
-Administrative / Managerial Controls
+**Gaps:**
+- No encryption for sensitive customer data  
+- Assets are inventoried but not classified  
 
-Technical Controls
+---
 
-Physical / Operational Controls
+### 7.3 SOC Type 1 & Type 2
 
-5.2 Control Types Considered
+**Status:** ❌ Non-Compliant
 
-Preventative
+**Findings:**
+- Least Privilege and separation of duties not implemented  
+- Sensitive data (PII/SPII) is not encrypted  
+- Data availability exists, but access is overly permissive  
 
-Detective
+---
 
-Corrective
-
-Deterrent
-
-6. Controls Assessment Checklist
-| Control                     | Implemented | Explanation                                                           |
-| --------------------------- | ----------- | --------------------------------------------------------------------- |
-| Least Privilege             | ❌ No        | All employees currently have access to sensitive customer data        |
-| Disaster Recovery Plan      | ❌ No        | No formal disaster recovery or business continuity plan               |
-| Password Policy             | ❌ No        | Existing policy is weak and does not meet modern complexity standards |
-| Separation of Duties        | ❌ No        | CEO handles operations and payroll without separation                 |
-| Firewall                    | ✅ Yes       | Firewall rules are properly configured                                |
-| IDS                         | ❌ No        | No intrusion detection system in place                                |
-| Backups                     | ❌ No        | No backups of critical business data                                  |
-| Antivirus Software          | ✅ Yes       | Installed and monitored regularly                                     |
-| Legacy System Monitoring    | ❌ Partial   | Systems monitored, but no formal schedule or documented procedures    |
-| Encryption                  | ❌ No        | Sensitive data is stored and transmitted unencrypted                  |
-| Password Management System  | ❌ No        | No centralized password management solution                           |
-| Physical Locks              | ✅ Yes       | Offices, storefront, and warehouse secured                            |
-| CCTV                        | ✅ Yes       | Surveillance cameras installed and operational                        |
-| Fire Detection & Prevention | ✅ Yes       | Fire alarm and sprinkler systems in place                             |
-
-7. Compliance Assessment
-7.1 PCI DSS (Payment Card Industry Data Security Standard)
-
-Status: ❌ Non-compliant
-
-Key Issues:
-
-Unauthorized access to credit card data
-
-No encryption of payment card information
-
-Weak password controls
-
-7.2 GDPR (General Data Protection Regulation)
-
-Status: ⚠️ Partially Compliant
-
-Strengths:
-
-Breach notification plan within 72 hours exists
-
-Privacy policies are documented and enforced
-
-Gaps:
-
-Lack of encryption for personal and financial data
-
-Assets not properly classified
-
-7.3 SOC Type 1 & Type 2
-
-Status: ❌ Non-compliant
-
-Key Issues:
-
-No least privilege or separation of duties
-
-No encryption for PII/SPII
-
-Data availability exists, but access is overly permissive
-
-8. Recommendations
+## 8. Recommendations
 
 To improve Botium Toys’ security posture and compliance standing, the following actions are recommended:
 
-Administrative Controls
+### Administrative Controls
+- Implement Least Privilege access  
+- Enforce separation of duties  
+- Establish disaster recovery and incident response plans  
+- Strengthen password policies  
 
-Implement Least Privilege access
+### Technical Controls
+- Implement encryption for data at rest and in transit  
+- Deploy an intrusion detection system (IDS)  
+- Implement centralized password management  
+- Establish automated backups  
+- Create a formal maintenance schedule for legacy systems  
 
-Enforce separation of duties
+### Compliance Improvements
+- Align controls with PCI DSS requirements  
+- Properly classify and inventory assets  
+- Restrict access to sensitive data based on job roles  
 
-Establish formal disaster recovery and incident response plans
+---
 
-Strengthen password policies
+## 9. Conclusion
 
-Technical Controls
+This internal IT audit identified multiple high-risk gaps in Botium Toys’ cybersecurity and compliance posture. While basic security controls such as firewalls, antivirus software, and physical protections are in place, the absence of access controls, encryption, monitoring, and recovery planning significantly increases organizational risk.
 
-Implement encryption for data at rest and in transit
+Implementing the recommended controls will improve the confidentiality, integrity, and availability of data while reducing the likelihood of security incidents and regulatory penalties.
 
-Deploy an intrusion detection system (IDS)
+---
 
-Implement centralized password management
+> **Note:** This project is an academic case study created for learning purposes and demonstrates internal IT audit practices aligned with the NIST Cybersecurity Framework.
 
-Establish automated backups for critical systems
-
-Create a formal maintenance schedule for legacy systems
-
-Compliance Improvements
-
-Align controls with PCI DSS requirements
-
-Classify and inventory all assets
-
-Restrict access to sensitive data based on job role
-
-9. Conclusion
-
-This internal IT audit identified several high-risk gaps in Botium Toys’ cybersecurity controls and compliance posture. While basic security measures such as firewalls, antivirus software, and physical protections are in place, the lack of access control, encryption, monitoring, and recovery planning significantly increases organizational risk.
-
-Implementing the recommended controls will substantially improve Botium Toys’ confidentiality, integrity, and availability of data, while reducing the likelihood of security incidents and regulatory penalties.
